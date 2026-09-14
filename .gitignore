@@ -31,3 +31,12 @@ build/
 
 ### VS Code ###
 .vscode/
+
+# Upload
+uploads/
+
+# File log
+*.log
+
+# Konfigurasi lokal berisi kredensial - JANGAN di-commit
+src/main/resources/application-local.properties
