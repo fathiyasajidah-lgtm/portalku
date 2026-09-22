@@ -25,8 +25,9 @@ public class JurnalService {
     }
 
     public void hapus(Integer id) {
-        if (!jurnalRepository.deleteById(id)) {
+        if (!jurnalRepository.existsById(id)) {
             throw new JurnalTidakDitemukanException(id);
         }
+        jurnalRepository.deleteById(id);
     }
 }
