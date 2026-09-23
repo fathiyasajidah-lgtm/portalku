@@ -17,9 +17,10 @@ public class DataAwalJurnal implements CommandLineRunner {
         if (jurnalRepository.count() > 0) {
             return;
         }
-        jurnalRepository.save(new Jurnal(null, "JISEBI", "Universitas Airlangga", 2015));
         jurnalRepository.save(
-            new Jurnal(null, "Jurnal Informatika Polinema", "Politeknik Negeri Malang", 2015));
+            new Jurnal(null, "JISEBI", "Universitas Airlangga", 2015, null));
+        jurnalRepository.save(
+            new Jurnal(null, "Jurnal Informatika Polinema", "Politeknik Negeri Malang", 2015, null));
     }
     
 }
